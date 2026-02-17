@@ -1,0 +1,64 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+}
+
+.auth-background {
+  width: 100%;
+  max-width: 500px;
+}
+
+.auth-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.auth-header {
+  text-align: center;
+  color: var(--white);
+}
+
+.auth-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.auth-header p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.auth-tabs {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  background-color: var(--white);
+  color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.tab:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
